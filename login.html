@@ -1,0 +1,169 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="bg-zinc-900">
+        <div class="flex justify-between items-center mx-10 py-2">
+            <div>
+                <img src="images/momo.png" alt="" class="w-24 h-16">
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg id="menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex md:space-x-10 space-x-0 mt-2 md:mt-0">
+                <li class="text-white text-lg hover:text-yellow-500">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="text-white text-lg hover:text-yellow-500">
+                    <a href="">Services</a>
+                </li>
+                <li class="text-white text-lg hover:text-yellow-500">
+                    <a href="">About</a>
+                </li>
+                <li class="text-white text-lg hover:text-yellow-500">
+                    <a href="">Contact Us</a>
+                </li>
+                <li class="text-white text-lg hover:text-yellow-500">
+                    <a href="">FAQs</a>
+                </li>
+            </ul>
+            <div class="hidden md:flex mt-1 space-x-5">
+                <a href="login.html"> <button class="border-2 text-lg font-medium py-1 rounded-md border-teal-800 px-10 text-yellow-500">Login</button></a>
+                <a href="signup.html"> <button class="bg-white text-lg font-medium py-1 rounded-md text-yellow-500 px-10">Register</button></a> 
+            </div>
+        </div>
+        <div id="menu-mobile" class="hidden md:hidden flex flex-col items-start ms-9 mt-2 space-y-2 pb-2">
+
+            <a href="index.html" class="text-white text-lg hover:text-yellow-500">Home</a>
+            <a href="" class="text-white text-lg hover:text-yellow-500">Services</a>
+            <a href="" class="text-white text-lg hover:text-yellow-500">About</a>
+            <a href="" class="text-white text-lg hover:text-yellow-500">Contact Us</a>
+            <a href="" class="text-white text-lg hover:text-yellow-500">FAQs</a>
+            <div class="flex flex-col items-center mt-2 space-y-2">
+                <a href="login.html"> <button class="border-2 text-lg font-medium py-1 rounded-md border-teal-800 px-10 text-yellow-500">Login</button></a>
+                <a href="signup.html"> <button class="bg-white text-lg font-medium py-1 rounded-md text-yellow-500 px-10">Register</button></a> 
+            </div>
+        </div>
+    </nav>
+
+    <!-- End of navbar -->
+    
+    <div class="md:mx-20 mx-5 mt-5 flex justify-center">
+    
+        <div class=" border  bg-cyan-50 border-teal-800 px-12 md:w-2/5 w-full pt-10 pb-28 rounded-lg mb-5">
+
+         
+
+            <h1 class="font-bold text-xl my-3">Login</h1>
+    
+            <div class="md:space-x-4 space-x-0 flex flex-wrap md:space-y-0 space-y-4 justify-center mt-5">
+                <div class="bg-white px-4 py-4  rounded-3xl flex space-x-1">
+                    <span><img src="images/gac.png" alt="" class="w-4 h-4"></span>
+                    <span class="text-xs text-gray-500">Sign up with Google</span>
+                </div>
+                <div class="bg-white px-4 py-3  rounded-3xl">
+                    <span><i class="fa-brands fa-github"></i></span>
+                    <span class="text-xs text-gray-500">Sign up with Github</span>
+                </div>
+            </div>
+
+            <form action="">
+               
+                   
+                    
+                      
+                     
+                      
+                      <div class="mt-5">
+                        <label for="email" class="block text-gray-400 text-xs">Email</label>
+                        <div class="">
+                          <input type="email" name="" id="" autocomplete="given-name" class="block w-full   border-b bg-gray-50/0 focus:outline-none focus:border-blue-500 sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+
+                      <div class="mt-5">
+                        <label for="email" class="block text-gray-400 text-xs ">Pasword</label>
+                        <div class="relative">
+                            <input type="password" id="password" class="block w-full   border-b bg-gray-50/0 focus:outline-none focus:border-blue-500 sm:text-sm sm:leading-6">
+                            <svg id="togglePassword" class="absolute right-2 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-.001.001-4.543 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                      </div>
+                     
+                <div class="flex space-x-1 justify-between my-5">
+                    <div>
+                        <input type="checkbox" name="" id="" class="bg-gray-900/0 text-yellow-500"><span class="text-xs text-gray-400"> Remember me</span>
+                    </div>
+                    
+
+                    <button class="bg-teal-800 text-xs text-white rounded-3xl md:py-3  px-8  shadow-lg">
+                        LOGIN
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-xs text-gray-400 ">No Account yet? <a href="signup.html" class="font-bold text-black ">SIGN UP </a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        const passwordField = document.getElementById('password');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', function () {
+            // Toggle the type attribute
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Toggle the eye / eye slash icon
+            if (type === 'password') {
+                togglePassword.setAttribute('fill', 'none');
+                togglePassword.setAttribute('stroke', 'currentColor');
+            } else {
+                togglePassword.setAttribute('fill', 'currentColor');
+                togglePassword.setAttribute('stroke', 'none');
+            }
+        });
+
+
+           // Responsive navbar
+
+           document.getElementById('menu-btn').addEventListener('click', function () {
+            var menu = document.getElementById('menu-mobile');
+            var menuOpenIcon = document.getElementById('menu-open');
+            var menuCloseIcon = document.getElementById('menu-close');
+            menu.classList.toggle('hidden');
+            menuOpenIcon.classList.toggle('hidden');
+            menuCloseIcon.classList.toggle('hidden');
+        });
+
+    </script>
+
+</body>
+</html>
